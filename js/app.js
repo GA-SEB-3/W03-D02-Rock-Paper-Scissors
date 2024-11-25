@@ -40,6 +40,7 @@ const compare = () =>{
         msg = "Congrats! You Win"
     }
 
+    // Lose Condition
     else{
         msg = "You Lose! Try Again"
     }
@@ -51,10 +52,13 @@ const play = (event)=>{
         playerChoice = event.target.id
         const randomIndex = Math.floor(Math.random() * 3)
         computerChoice = choices[randomIndex]
+        compare()
 
         console.log(`Player choice = ${playerChoice}`)
 
         console.log("Computer choice = " + computerChoice)
+
+        console.log(msg)
 
     }
 
