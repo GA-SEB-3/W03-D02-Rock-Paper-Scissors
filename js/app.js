@@ -60,6 +60,9 @@ const play = (event)=>{
 
         console.log(msg)
 
+        resultDisplayEl.textContent = `Player Choice is ${playerChoice} and Computer Choice is ${computerChoice}, ${msg}`
+
+
     }
 
 
