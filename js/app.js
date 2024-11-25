@@ -46,6 +46,16 @@ const compare = () =>{
     }
 }
 
+const render = () =>{
+    console.log(`Player choice = ${playerChoice}`)
+
+    console.log("Computer choice = " + computerChoice)
+
+    console.log(msg)
+
+    resultDisplayEl.textContent = `Player Choice is ${playerChoice} and Computer Choice is ${computerChoice}, ${msg}`
+}
+
 
 // console.log(Math.ceil(1.5))
 const play = (event)=>{
@@ -53,16 +63,7 @@ const play = (event)=>{
         const randomIndex = Math.floor(Math.random() * 3)
         computerChoice = choices[randomIndex]
         compare()
-
-        console.log(`Player choice = ${playerChoice}`)
-
-        console.log("Computer choice = " + computerChoice)
-
-        console.log(msg)
-
-        resultDisplayEl.textContent = `Player Choice is ${playerChoice} and Computer Choice is ${computerChoice}, ${msg}`
-
-
+        render()
     }
 
 
